@@ -1,0 +1,118 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #1e1e2f, #2c2c54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container {
+    background: #2f2f4f;
+    width: 400px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Heading */
+#heading {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+/* Input */
+#task_input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+/* Add button */
+#add_btn {
+    width: 100%;
+    padding: 10px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#add_btn:hover {
+    background: #5848e5;
+}
+
+/* Task list */
+#task_list {
+    list-style: none;
+    margin-top: 15px;
+    width: 100%;
+}
+
+/* Each task */
+#task_list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #3b3b5c;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Task text */
+.task_text {
+    color: white;
+    flex: 1;
+    text-align: left;
+    margin-left: 10px;
+}
+
+/* Completed task */
+.task_marked {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* Complete button */
+.comp_btn {
+    background: #00c896;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.comp_btn.marked {
+    background: #00a67d;
+}
+
+/* Delete button */
+.delete_btn {
+    background: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.delete_btn:hover {
+    background: #e60000;
+}
